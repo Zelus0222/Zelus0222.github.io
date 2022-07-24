@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!--帶入 scss-->
-    <link href="sec.css"rel="stylesheet">
-    <title>Document</title>
+    <meta charset="UTF-8"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--資料連結-->>
+    <link href="css/style.css" rel="stylesheet">
+    <!--中文字型-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <!--英文字型-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title> [OR]Operating Room-知識小天地</title>
 </head>
 <body>
-<!--header logo-->
     <header>
-        <h1>< header ><P>可放置首頁主要標題 logo -</P></h1>
-    <!--p是標題會自動換行-->
+    <div class="container">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <!--logo圖片-->
+            <img src="pictures/logo.jpg">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
     </header>
-    <!--語意標籤 nav＝導覽-->
-    <!--ul ＝大段落  li＝小段落-->
-    <nav>
-        < nav > <p>此為網頁導覽區塊</p>
-        <ul>
-            <li><a href="https://www.google.com/">HOME</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <!--這裡為article 裡面放 section 標籤-->
-    <article>
-        < article > <p> 內容區 </p>
-        <!--section-->
-        <section> < section ><p> 網頁內容區塊-1 </p></section>
-    </article>
+    <!--中間區塊-->
+    <section id="intro">
+        <div class="container-fluid bg-light p-5">
+            <div class="container">
+                <div class="col-md-12">
+                    <h1 class="col-md-4">開刀房小知識</h1>
+                    <p class="lead">要進刀房了？好緊張喔 該怎麼辦呢？</p>
+                    <a class="btn btn-warning btn-lg" href="#" role="button">注意事項</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <aside>
-        < aside > <p> 側邊欄 可放置額外資訊 相關連結</p>
-    </aside>
-    <!--footer-->
-    <footer>
-        < footer > <p> 頁角處 可在聲明版權 使用規範等等</p>
-    </footer>
-    
 </body>
 </html>
